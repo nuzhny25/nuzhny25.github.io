@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head> 
-        <title>
-            Hello World
-        </title>
-    </head>
-    <body>
-            Hello world 
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+
+    <title>Aleksandr Nuzhnyi</title>
+    <meta name="description" content="Projects, experience and education of Aleksandr Nuzhnyi, a computer science student at NYU.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nuzhny25.github.io/">
+    <meta property="og:title" content="Aleksandr Nuzhnyi">
+    <meta property="og:description" content="Projects, experience and education of Aleksandr Nuzhnyi, a computer science student at NYU.">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><style>circle{fill:%23171717}@media (prefers-color-scheme:dark){circle{fill:%23ededed}}</style><circle cx='8' cy='8' r='5'/></svg>">
+    <link rel="stylesheet" href="style.css">
+    <script src="content.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Aleksandr Nuzhnyi</h1>
+      <p class="intro">I am a computer science student at NYU, graduating in May 2027. My research in computational biology sparked my fascination with interpretable machine learning. + Whenever I get a chance, I enjoy recreational programming. My favorite language is C due to its small size and the fact that it is a lower level; however, I also enjoy Python when I am just trying to have fun building something new. I also like to challenge myself by building new projects (stay tuned for my ASCII painter app).</p>
+      <nav class="links" aria-label="Links">
+        <a href="https://github.com/nuzhny25" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/aleksandr-nuzhnyi-0757472a9" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:an4059@nyu.edu">Email</a>
+        <a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+      </nav>
+    </header>
+
+    <!-- These lists are filled in from content.js -->
+    <main>
+      <section id="projects" hidden>
+        <h2>Projects</h2>
+        <ul class="entries"></ul>
+      </section>
+
+      <section id="experience" hidden>
+        <h2>Experience</h2>
+        <ul class="entries"></ul>
+      </section>
+
+      <section id="education" hidden>
+        <h2>Education</h2>
+        <ul class="entries"></ul>
+      </section>
+    </main>
+
+    <footer>© <span id="year"></span> Aleksandr Nuzhnyi</footer>
+
+    <!-- One list entry. script.js copies it for each item in content.js -->
+    <template id="entry-template">
+      <li class="entry">
+        <div class="entry-head">
+          <h3 class="entry-title"><span class="entry-name"></span><span class="entry-org"></span></h3>
+          <span class="entry-date"></span>
+        </div>
+        <p class="entry-description"></p>
+        <div class="entry-meta">
+          <span class="entry-tags"></span>
+          <span class="entry-links"></span>
+        </div>
+      </li>
+    </template>
+  </body>
 </html>
