@@ -24,18 +24,18 @@ const PROJECTS = [
     tags: ["Python", "PyTorch", "NumPy"],
   },
   {
-    title: "FunnAI",
-    date: "Spring 2026",
-    description:
-      "A team web app that scores jokes from transcribed speech. I wrote the humor-analysis module that classifies and scores jokes with the Gemini API, containerized the ML client with Docker, and set up CI with GitHub Actions.",
-    tags: ["Python", "Flask", "Docker", "GitHub Actions", "Gemini API"],
-  },
-  {
     title: "Sudoku Solver",
     date: "Summer 2026",
     description: "A brute-force Sudoku solver written in C.",
     tags: ["C"],
     links: { Code: "https://github.com/nuzhny25/sudoku_solver" },
+  },
+  {
+    title: "FunnAI",
+    date: "Spring 2026",
+    description:
+      "A team web app that scores jokes from transcribed speech. I wrote the humor-analysis module that classifies and scores jokes with the Gemini API, containerized the ML client with Docker, and set up CI with GitHub Actions.",
+    tags: ["Python", "Flask", "Docker", "GitHub Actions", "Gemini API"],
   },
 ];
 
